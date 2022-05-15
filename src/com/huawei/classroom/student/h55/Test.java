@@ -19,9 +19,9 @@ public class Test {
 		 */
 		//chars 若干汉字组成的字符串以;分割，1统计这些汉字组成什么词汇出现在诗句里面，2按这些词汇出现的频率高低排序；3只要是两个汉字连起来就视为一个词
 		String chars = "春;夏;秋;冬;暑;寒;风;雨;雪;霜;露";
-		
-		util.analysis("xxxx/libai.txt", chars);
-		util.analysis("xxxx/dufu.txt", chars);
+		System.out.println("heelo");
+		util.analysis("D:\\北小洋\\21222\\程序设计初级实践\\OOP_Junior_Practice\\src\\com\\huawei\\classroom\\student\\h55\\dufu.txt", chars);
+		util.analysis("D:\\北小洋\\21222\\程序设计初级实践\\OOP_Junior_Practice\\src\\com\\huawei\\classroom\\student\\h55\\dufu.txt", chars);
 		//春;夏;秋;冬;暑;寒;风;雨;雪;霜;露 是几个和季节有关的词汇，李白和杜甫在高频词上有所不同，李白喜欢 春风 风吹 秋月 ，杜甫喜欢 风尘  秋风
 		// 参考运行结果，仅供参考
 		// 李白 杜甫
@@ -37,8 +37,8 @@ public class Test {
 		// 长风 21 云雨 16
 		// 秋霜 20 高秋 16
 		chars = "醉;酒;饮;杯";
-		util.analysis("xxxx/libai.txt", chars);
-		util.analysis("xxxx/dufu.txt", chars);
+		util.analysis("D:\\北小洋\\21222\\程序设计初级实践\\OOP_Junior_Practice\\src\\com\\huawei\\classroom\\student\\h55\\dufu.txt", chars);
+		util.analysis("D:\\北小洋\\21222\\程序设计初级实践\\OOP_Junior_Practice\\src\\com\\huawei\\classroom\\student\\h55\\dufu.txt", chars);
 		// 参考运行结果，仅供参考，李白喝酒比杜甫多 而且酒量也比杜甫大
 		// 李白 杜甫
 		// 词汇 频率 词汇 频率
@@ -53,8 +53,8 @@ public class Test {
 		// 饮酒 8 酒杯 5
 		// 衔杯 7 酒肉 5
 		chars = "东;西;南;北";
-		util.analysis("xxxx/libai.txt", chars);
-		util.analysis("xxxx/dufu.txt", chars);
+		util.analysis("D:\\北小洋\\21222\\程序设计初级实践\\OOP_Junior_Practice\\src\\com\\huawei\\classroom\\student\\h55\\dufu.txt", chars);
+		util.analysis("D:\\北小洋\\21222\\程序设计初级实践\\OOP_Junior_Practice\\src\\com\\huawei\\classroom\\student\\h55\\dufu.txt", chars);
 		// 参考运行结果，仅供参考，李白更喜欢东风 杜甫总是想到北风 
 		// 李白 杜甫
 		// 词汇 频率 词汇 频率
@@ -71,5 +71,12 @@ public class Test {
 
 		//大家可以分析别的词汇，用计算机来证明  为什么说李白是浪漫主义诗人 杜甫是现实主义诗人
 	}
-
+	public static void main(String[] args) {
+		PoetryAnalysis util = new PoetryAnalysis();
+		String chars = "春;夏;秋;冬;暑;寒;风;雨;雪;霜;露";
+		//util.analysis("D:\\北小洋\\21222\\程序设计初级实践\\OOP_Junior_Practice\\src\\com\\huawei\\classroom\\student\\h55\\libai.txt", chars);
+		util.analysis("D:\\北小洋\\21222\\程序设计初级实践\\OOP_Junior_Practice\\src\\com\\huawei\\classroom\\student\\h55\\dufu.txt", chars);
+	
+		
+	}
 }
