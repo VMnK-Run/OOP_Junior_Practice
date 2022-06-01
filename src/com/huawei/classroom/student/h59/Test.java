@@ -14,7 +14,7 @@ public class Test {
 //		# A + B = C + D 意味着体系中如果有了 A B 就可以生成C D，同样如果有C D 也可以生成 A B 
 //		# 所有反应 反应物前系数均为 1 
 //		根据一个体系中初始化合物 ，最后可能都存在什么化合物
-		String reactionFilename="xxx/reactions.txt";
+		String reactionFilename="D:\\北小洋\\21222\\程序设计初级实践\\OOP_Junior_Practice\\src\\com\\huawei\\classroom\\student\\h59\\reactions.txt";
 		ReactionTools tool=new ReactionTools();
 		Set<String> init=new HashSet<String>();
 		//初始物种 只有 HCL  NaOH
@@ -23,7 +23,7 @@ public class Test {
 		Set<String> result=tool.findAllComponents(reactionFilename, init);
 		Set<String> target=new HashSet<String>();
 		//根据reacitons.txt判断体系可以衍生出如下物质
-			target.add("HCl");
+		target.add("HCl");
 		target.add("NaOH");
 		target.add("H+");
 		target.add("Cl-");
@@ -33,6 +33,8 @@ public class Test {
 		target.add("NaCl");
 		if(target.equals(result)) {
 			System.out.println("pass!");
+		} else {
+			System.out.println("ShaBi");
 		}
 	}
 
