@@ -1,8 +1,19 @@
 package com.huawei.classroom.student.h58;
 
-import java.util.Map;
+import java.io.FileReader;
+import java.io.LineNumberReader;
+import java.io.Reader;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.zone.ZoneRulesException;
+import java.util.*;
 
 public class VoteRecord {
+	
+	public List<String[]> voteDetail;
+	public final String foramString = "yyyy-MM-dd HH:mm:ss";
+	
 	/**
 	 * fileName是一个投票的明细记录，里面逐行存放了 投票的时间（yyyy-MM-dd HH:mm:ss 格式） +\t+投票的微信ID+\t+候选人
 	 * 存放按时间递增（但是可能出现同一秒出现若干条记录的情况）
@@ -15,7 +26,51 @@ public class VoteRecord {
 	 * @return 返回一个map，其中key是候选人名字，value的票数
 	 */
 	public Map<String,Integer> calcRecording(String fileName){
-		return null;
+		Voters voters = new Voters();
+		Map<String, Integer> map = new HashMap<String, Integer>();
+		DateFormat fmt = new SimpleDateFormat(foramString);
+		this.voteDetail = getVoteDetail(fileName);
+		for(int i = 0; i < voteDetail.size(); i++) {
+			String date = voteDetail.get(i)[0];
+			Date tDate = null;
+			try {
+				tDate = fmt.parse(date);
+			} catch (ParseException e) {
+				// TODO 自动生成的 catch 块
+				e.printStackTrace();
+			}
+			long time = tDate.getTime();
+			String user = voteDetail.get(i)[1];
+			String name = voteDetail.get(i)[2];
+			Record record = new Record(time, user);
+			voters.add(record);
+			if(!voters.isVaild(record)) {
+				continue;
+			}
+			if(!map.containsKey(name)) {
+				map.put(name, 1);
+			} else {
+				map.put(name, map.get(name) + 1);
+			}
+		}
+		return map;
+	}
+	
+	
+	public List<String[]> getVoteDetail(String fileName) {
+		List<String[]> res = new ArrayList<String[]>();
+		try (Reader reader = new FileReader(fileName);
+				LineNumberReader lineReader = new LineNumberReader(reader)){
+			String line = lineReader.readLine();
+			while(line != null) {
+				res.add(line.split("\t"));
+				line = lineReader.readLine();
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return res;
 	}
 
 }
