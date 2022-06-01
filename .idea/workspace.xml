@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="172e242c-0a18-4aca-8719-736d6e6375d1" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h60/ChatClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h60/ChatServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h60/ReceiveThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h60/ServerThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h60/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h60/user.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/huawei/classroom/student/h59/ReactionTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h59/ReactionTools.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/huawei/classroom/student/h59/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h59/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/huawei/classroom/student/h60/ChatClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/huawei/classroom/student/h60/ChatServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/huawei/classroom/student/h60/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/huawei/classroom/student/h60/user.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/huawei/classroom/student/h61/Param.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/huawei/classroom/student/h61/SimResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/huawei/classroom/student/h61/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/huawei/classroom/student/h62/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/huawei/classroom/student/h62/my_user.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/huawei/classroom/student/h62/test/a.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/huawei/classroom/student/h62/test/b.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/huawei/classroom/student/h62/test/dir1/c.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,13 +38,26 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../面向对象程序设计/Practice" />
   </component>
-  <component name="RunManager" selected="应用程序.Test (1)">
+  <component name="RunManager" selected="应用程序.Test (2)">
     <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.huawei.classroom.student.h59.Test" />
       <module name="OOP_Junior_Practice" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.huawei.classroom.student.h59.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.huawei.classroom.student.h60.Test" />
+      <module name="OOP_Junior_Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.huawei.classroom.student.h60.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -65,6 +80,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Test (2)" />
         <item itemvalue="应用程序.Test (1)" />
         <item itemvalue="应用程序.Test" />
       </list>
@@ -80,6 +96,17 @@
       <updated>1652326626455</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
