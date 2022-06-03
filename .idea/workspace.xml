@@ -5,19 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="172e242c-0a18-4aca-8719-736d6e6375d1" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h61/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h61/Family.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h61/Hospital.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h61/Param.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h61/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h61/Place.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h61/SimResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h61/Simulate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h61/State.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h61/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h61/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h62/MyDaemon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h62/MyDeamonConfigVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h62/MyHost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h62/MyRemoteFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h62/Request.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huawei/classroom/student/h62/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h62/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +51,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.huawei.classroom.student.h62" />
       <recent name="com.huawei.classroom.student.h61" />
     </key>
   </component>
@@ -80,6 +75,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.huawei.classroom.student.h60.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.huawei.classroom.student.h62.Test" />
+      <module name="OOP_Junior_Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.huawei.classroom.student.h62.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,6 +123,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Test (3)" />
         <item itemvalue="应用程序.Test (3)" />
         <item itemvalue="应用程序.Test (2)" />
         <item itemvalue="应用程序.Test (1)" />

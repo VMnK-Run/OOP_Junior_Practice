@@ -1,6 +1,5 @@
 package com.huawei.classroom.student.h62;
 
-
 public class Test {
 
 	public static void main(String[] args) {
@@ -12,14 +11,14 @@ public class Test {
 			// 构造一个能够用户socket访问和控制远程文件的项目
 			// MyDaemon 服务器端
 			// 服务器端启动的时候，配置信息存在MyDeamonConfigVo 中
-			String remoteHome = "D:/course/course/exam/src/main/java/com/huawei/classroom/student/h62/test/";
+			String remoteHome = "D:\\北小洋\\21222\\程序设计初级实践\\OOP_Junior_Practice\\src\\com\\huawei\\classroom\\student\\h62\\test";
 			MyDeamonConfigVo config = new MyDeamonConfigVo();
 			// 根目录在什么地方
 			config.setRoot(remoteHome);
 			// 监听端口号
 			config.setPort(9999);
 			// 存放了用户名 口令 的认证数据文件
-			config.setPasswordFile("D:/course/course/exam/src/main/java/com/huawei/classroom/student/h62/my_user.txt");
+			config.setPasswordFile("D:\\北小洋\\21222\\程序设计初级实践\\OOP_Junior_Practice\\src\\com\\huawei\\classroom\\student\\h62\\my_user.txt");
 			// 构造我的监听类
 			MyDaemon deamon = new MyDaemon(config);
 			// 启动
@@ -57,29 +56,29 @@ public class Test {
 			MyRemoteFile c3=children[0];
 			System.out.println("第3步 如果下面打印出来都是true 则列孩子的 dirByNameAsc 完成 !");
 			System.out.println(!c3.isDirectory()&&(c3.isFile())&&"/dir1/c.txt".equals(c3.getPathFileName()));
-			
-			
+
+
 			MyRemoteFile file2 = new MyRemoteFile(host, "/test.txt");
-			
+
 			String content="abc";
 			// 输入这个文件
 			file2.writeByBytes(content.getBytes("UTF-8"));
 			System.out.println(!file2.isDirectory()&&(file2.isFile())&&"/test.txt".equals(file2.getPathFileName()));
 			System.out.println("第4步 如果 上面打印出来是true , remoteHome 目录下存在/test.txt,且内容为content,  向远程写文件完成!");
-			
+
 			MyRemoteFile file3 = new MyRemoteFile(host, "/test.txt");
-			 
+
 			// length()文件的大小
 			if(file3.length()==content.getBytes().length) {
 				System.out.println("第5步 检索远程文件信息通过!");
 			}
-			
+
 			//删除远程文件
-			file2.delete(); 
+			file2.delete();
 			MyRemoteFile file4 = new MyRemoteFile(host, "/test.txt");
 			if(!file4.exists()&&file4.length()==0) {
 				System.out.println("第6步 删除远程文件信息通过!");
-			} 
+			}
  
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
