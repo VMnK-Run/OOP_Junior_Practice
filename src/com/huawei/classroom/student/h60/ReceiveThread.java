@@ -13,6 +13,7 @@ public class ReceiveThread extends Thread{
         try {
             this.out = new PrintWriter(socket.getOutputStream());
             this.in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            this.setDaemon(true);
         } catch (IOException e) {
             e.printStackTrace();
         }

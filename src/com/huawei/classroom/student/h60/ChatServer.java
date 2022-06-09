@@ -30,7 +30,8 @@ public class ChatServer {
 	 * 开始监听
 	 */
 	public void startListen( ) {
-		new ServerThread(this.port).start();
+		ServerThread thread = new ServerThread(this.port);
+		thread.start();
 	}
 
 	public Map<String, String> readIn(String fileName) {

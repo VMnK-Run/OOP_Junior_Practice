@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="172e242c-0a18-4aca-8719-736d6e6375d1" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h62/MyDaemon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h62/MyDeamonConfigVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h62/MyHost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h62/MyRemoteFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h62/Request.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/huawei/classroom/student/h62/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h62/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huawei/classroom/student/h60/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h60/ChatServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huawei/classroom/student/h60/ReceiveThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h60/ReceiveThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huawei/classroom/student/h60/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h60/ServerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huawei/classroom/student/h62/MyDaemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h62/MyDaemon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huawei/classroom/student/h62/MyHost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/huawei/classroom/student/h62/MyHost.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,8 +123,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="应用程序.Test (3)" />
-        <item itemvalue="应用程序.Test (3)" />
         <item itemvalue="应用程序.Test (2)" />
+        <item itemvalue="应用程序.Test (3)" />
         <item itemvalue="应用程序.Test (1)" />
         <item itemvalue="应用程序.Test" />
       </list>
@@ -153,16 +152,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/huawei/classroom/student/h58/VoteRecord.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

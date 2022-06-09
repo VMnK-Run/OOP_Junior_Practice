@@ -10,6 +10,7 @@ public class ServerThread extends Thread{
     public ServerThread(int port) {
         this.port = port;
         this.serverSocket = null;
+        this.setDaemon(true);
     }
 
     @Override

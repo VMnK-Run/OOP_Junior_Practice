@@ -24,6 +24,7 @@ public class MyDaemon extends Thread{
         this.socket = null;
         this.out = null;
         this.in = null;
+        this.setDaemon(true);
     }
 
     @Override
@@ -116,11 +117,13 @@ public class MyDaemon extends Thread{
     public void processWriteByBytes(String[] str) {
         String fileName = this.root + str[1];
         try {
-            InputStream in = socket.getInputStream();
-            byte[] data = new byte[4096];
-            int readed = in.read(data);
-            String line = new String(data, 0, readed);
-            writeFile(fileName, line);
+//            InputStream inBytes = socket.getInputStream();
+//            byte[] data = new byte[4096];
+//            int readed = inBytes.read(data);
+//            String line = new String(data, 0, readed);
+            String message = in.readLine();
+            writeFile(fileName, message);
+
         } catch (IOException e) {
             e.printStackTrace();
         }

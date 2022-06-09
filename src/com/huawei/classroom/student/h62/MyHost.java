@@ -2,6 +2,7 @@ package com.huawei.classroom.student.h62;
 
 import java.io.*;
 import java.net.Socket;
+import java.util.Arrays;
 
 public class MyHost {
     private String ip;
@@ -88,13 +89,17 @@ public class MyHost {
     public void writeByBytes(byte[] bytes, String path) {
         out.write(Request.writeBytes + "\t" + path + "\r\n");
         out.flush();
-        try {
-            OutputStream outer = socket.getOutputStream();
-            outer.write(bytes);
-            outer.flush();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            OutputStream outer = socket.getOutputStream();
+//            outer.write(bytes);
+//            outer.flush();
+//
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+        String line = new String(bytes, 0, bytes.length);
+        out.write(line + "\r\n");
+        out.flush();
     }
 
     public int getLength(String path) {
